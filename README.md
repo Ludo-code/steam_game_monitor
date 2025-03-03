@@ -30,7 +30,7 @@ cd steam_game_monitor
 ```
 
 3. Ouvrez le fichier `steam_game_monitor.sh` et remplacez les variables suivantes par vos propres informations :
-- `STEAM_API_KEY` : votre clé API Steam
+- `STEAM_API_KEY` : votre clé API Steam par [Faire ça clé d'api Steam ici](https://steamcommunity.com/dev/apikey)
 - `STEAM_USER_ID` : l'ID utilisateur Steam à surveiller
 - `DISCORD_WEBHOOK_URL` (facultatif) : l'URL du webhook Discord pour les notifications
 - `EMAIL` (facultatif) : votre adresse email pour les notifications
