@@ -51,7 +51,8 @@ check_user_defined
 previous_state="offline"
 while true; do
     response=$(curl -s "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$STEAM_API_KEY&steamids=$STEAM_USER_ID")
-    echo "API Response: $response" # Debugging output
+    # echo "API Response: $response" # Debugging output
+    # echo $response >> $LOG_FILE # Debugging output in the log file
     is_playing=$(echo $response | jq -r '.response.players[0].gameid')
     player_name=$(echo $response | jq -r '.response.players[0].personaname')
     game_name=$(echo $response | jq -r '.response.players[0].gameextrainfo')
