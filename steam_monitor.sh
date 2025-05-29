@@ -83,5 +83,5 @@ while true; do
         fi
     fi
 
-    sleep 60 # Check every 60 seconds
+    sleep 600 # Check every 10 minutes
 done
